@@ -2,11 +2,13 @@
 A small project to help assess candidate experience with webservices and our technology stack.
 
 ## Instructions
-We have provided a webservice that provides a "message of the day", similar to what you might see logging into a Unix system.  
-Unfortuantely, at Charter things don't always go as planned and we need to change the message.  We need you to add the abilty to change the 
+We have provided a webservice that provides a "message of the day", similar to what you might see logging into a 
+Unix system. Unfortuantely, at Charter things don't always go as planned and we need to change the message.  We need you
+ to add the abilty to change the 
 message.  No message history or any other advanced functionality is needed, unless there is something you'd like to show
 off.  The message can be stored in the service using any mechanism you like, but aim for simplicity.  A persistent store
-like MySQL or Hypersonic could be overkill for this new requirement.  Iterative requests for the MOTD should return the new message, if it has been changed.
+like MySQL or Hypersonic could be overkill for this new requirement.  Iterative 
+requests for the MOTD should return the new message, if it has been changed.
 Be sure to edit this README.md so we understand what you've done.
 
 Also, a rogue developer has left the code base broken.  To get anything done, you're doing to have to fix the tests first!
