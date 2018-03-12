@@ -1,27 +1,33 @@
 # Charter Enterprise MOTD Sample Project
-A small project to help assess candidate experience.
+A small project to help assess candidate experience with webservices and our technology stack.
 
 ## Instructions
-Create a webservice that provides a "message of the day", similar to what you might see logging into a Unix system.  
-This service will likely only do two things; first it should retrieve the message of the day and send it back,
- and second it should be possible to change the 
+We have provided a webservice that provides a "message of the day", similar to what you might see logging into a Unix system.  
+Unfortuantely, at Charter things don't always go as planned and we need to change the message.  We need you to add the abilty to change the 
 message.  No message history or any other advanced functionality is needed, unless there is something you'd like to show
-off.  The message can be stored in the service using any mechanism you like, but aim for simplicity.  You don't need to 
-implement a persistent store
-like MySQL or Hypersonic, but iterative requests for the MOTD should return a changed message, if it has been changed.
+off.  The message can be stored in the service using any mechanism you like, but aim for simplicity.  A persistent store
+like MySQL or Hypersonic could be overkill for this new requirement.  Iterative requests for the MOTD should return the new message, if it has been changed.
 Be sure to edit this README.md so we understand what you've done.
 
-### Getting Started
-In this section of the README.md, provide instructions on how to compile and run any of your code.  These instructions
- will require information
-on installing any tools you choose that aren't Java or Maven.
+Also, a rogue developer has left the code base broken.  To get anything done, you're doing to have to fix the tests first!
+And, no, -DskipTests is not a solution!
 
 Push your answer to this Github repo as a feature branch and create a pull request so we know you're done.
 
+### Getting Started
+* To compile
+```mvn clean package```
+
+* To run
+```mvn spring-boot:run```
+
+* To see the message:
+```curl localhost:8080```
+
 ### Prerequisites
-* We are a Spring Boot shop.   Any use of Spring is ideal, but our goal isn't for you to spend a ton of
-time on this.   Use whatever stack you're most familiar with.
-* Our main tools are Maven and Git, but again, feel free to use what is most efficient for you.
+* Java 1.8
+* Maven
+* cURL
   
 ### Deployment
 If you whiz through this sample, try adding a deployment.   We are a Docker and AWS shop.  Getting something into an
