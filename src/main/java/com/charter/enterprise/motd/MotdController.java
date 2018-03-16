@@ -10,7 +10,7 @@ public class MotdController {
 
     @GetMapping
     public String getMotd() {
-        return "Welcome to Charter.  All systems are nominal.";
+        return "Did I pass the test.";
     }
 
 }
